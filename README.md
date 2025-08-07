@@ -12,3 +12,6 @@ Built with plain HTML, CSS, and vanilla JavaScript
 
 **Usage**
 Open index.html in any modern browser and start typing your text. The statistics update instantly below the textarea.
+
+**LIVE DEMO:**
+http://127.0.0.1:3000/Index.html
