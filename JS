@@ -1,0 +1,41 @@
+// script.js
+
+const input = document.getElementById("textarea");
+const wordCount = document.querySelector("[data-word-count]");
+const characterCount = document.querySelector("[data-character-count]");
+const sentenceCount = document.querySelector("[data-sentence-count]");
+const paragraphCount = document.querySelector("[data-paragraph-count]");
+
+function updateCounts() {
+  const text = input.value.trim();
+
+  if (!text) {
+    resetCounts();
+    return;
+  }
+
+  // Characters (all characters including spaces)
+  characterCount.textContent = input.value.length;
+
+  // Words (split on any whitespace, ignore empty)
+  const wordArray = text.split(/\s+/).filter(Boolean);
+  wordCount.textContent = wordArray.length;
+
+  // Sentences (split on ., !, ? with one or more count, ignore empty)
+  const sentenceArray = text.split(/[.?!]+/).filter((s) => s.trim().length > 0);
+  sentenceCount.textContent = sentenceArray.length;
+
+  // Paragraphs (split on one or more newlines, ignore empty lines)
+  const paragraphArray = text.split(/\n+/).filter((p) => p.trim().length > 0);
+  paragraphCount.textContent = paragraphArray.length;
+}
+
+function resetCounts() {
+  wordCount.textContent =
+    characterCount.textContent =
+    sentenceCount.textContent =
+    paragraphCount.textContent =
+      "0";
+}
+
+input.addEventListener("input", updateCounts);
