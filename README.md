@@ -11,7 +11,7 @@ Clean, minimal design and responsive layout
 Built with plain HTML, CSS, and vanilla JavaScript or Javascript
 
 **Usage**
-Open index.html in any modern browser and start typing your text. The statistics update instantly below the textarea.
+Open the files separately in any text editor like `Vscode` and start typing your text. The statistics update instantly below the textarea.
 
 **LIVE DEMO:**
  https://word-counter-web-app.netlify.app/
