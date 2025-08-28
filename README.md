@@ -8,7 +8,7 @@ Handles multiple spaces and punctuation correctly
 
 Clean, minimal design and responsive layout
 
-Built with plain HTML, CSS, and vanilla JavaScript
+Built with plain HTML, CSS, and vanilla JavaScript or Javascript
 
 **Usage**
 Open index.html in any modern browser and start typing your text. The statistics update instantly below the textarea.
