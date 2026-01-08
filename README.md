@@ -14,4 +14,3 @@ Built with plain HTML, CSS, and vanilla JavaScript or Javascript
 Open the files separately in any text editor like `Vscode` and start typing your text. The statistics update instantly below the textarea.
 
 **LIVE DEMO:**
- https://word-counter-web-app.netlify.app/
